@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Салон краси</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#services">Послуги</a></li>
+                <li><a href="#shop">Магазин</a></li>
+                <li><a href="cart.html">Кошик (<span id="cart-count">0</span>)</a></li>
+                <li><a href="checkout.html">Оформлення замовлення</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Ласкаво просимо до нашого салону краси!</h1>
+        <p>Де ваша краса - наша турбота.</p>
+    </section>
+
+    <section id="about">
+        <h2>Про нас</h2>
+        <p>Наш салон пропонує найкращі послуги краси у місті.</p>
+    </section>
+
+    <section id="services">
+        <h2>Послуги:</h2>
+        <h2><ul>
+            <li>1. Стрижка</li>
+            <li>2. Манікюр</li>
+            <li>3. Масаж</li>
+        </ul></h2>
+    </section>
+
+    <section id="shop">
+        <h2>Магазин:</h2>
+        <div class="product">
+            <img src="./image/Стрижка.jpg" alt="">
+            <h3>Стрижка</h3>
+            <p>Стрижка для дорослих і малих!</p>
+            <p class="price">500 грн</p>
+            <button class="add-to-cart" data-name="Стрижка" data-price="500">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="./image/Манікюр.jpg" alt="">
+            <h3>Мінікюр</h3>
+            <p>Найкращий манікюр тільки в нас!</p>
+            <p class="price">600 грн</p>
+            <button class="add-to-cart" data-name="Манікюр" data-price="600">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="./image/Масаж.jpg" alt="">
+            <h3>Масаж</h3>
+            <p>Самий розслабляючий мачаж в цілому місті!</p>
+            <p class="price">700 грн</p>
+            <button class="add-to-cart" data-name="Масаж" data-price="700">Додати до кошика</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Контакти</h2>
+        <p>Зв'яжіться з нами для бронювання або питань за номером телефон: +380-12-345-67-89</p>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>

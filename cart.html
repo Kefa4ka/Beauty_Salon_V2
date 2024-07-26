@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Головна</a></li>
+                <li><a href="index.html#about">Про нас</a></li>
+                <li><a href="index.html#services">Послуги</a></li>
+                <li><a href="index.html#shop">Магазин</a></li>
+                <li><a href="cart.html">Кошик (<span id="cart-count">0</span>)</a></li>
+                <li><a href="checkout.html">Оформлення замовлення</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="cart">
+        <h2>Кошик</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Загальна сума: 0 грн</p>
+        <button id="clear-cart">Очистити кошик</button>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>

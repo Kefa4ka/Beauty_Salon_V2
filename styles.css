@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+#home {
+    background: url('salon.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px #000;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+section {
+    animation: fadeIn 2s;
+}
+
+.product {
+    background-color: #222;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product h3, .product p, .product .price {
+    margin: 0.5em 0;
+}
+
+.product .price {
+    color: #ff6347;
+    font-size: 1.2em;
+}
+
+.product button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #e5533d;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+#cart {
+    background-color: #222;
+    padding: 2em;
+    margin: 2em auto;
+    border-radius: 10px;
+    width: 80%;
+}
+
+#cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+#cart li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #444;
+}
+
+#cart li button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#cart li button:hover {
+    background-color: #e5533d;
+}
